@@ -1,0 +1,14 @@
+.container_title {
+    display: flex;
+    flex-flow: row nowrap;  
+    align-items: center;
+}
+
+.title_div {
+    width: 100%;
+    height: 0.5rem;
+    background-color: #DC0D0D;
+    border-bottom: solid 0.5rem #1DAD22;
+    text-align: center;
+    margin: 1rem;
+}

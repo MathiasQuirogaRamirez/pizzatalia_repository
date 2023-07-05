@@ -1,0 +1,47 @@
+.container_navbar {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.ul_navbar {
+    list-style: none;
+    width: auto;
+    padding: 2rem;
+}
+  
+.li_navbar {
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+  }
+  
+.img_logo {
+    width: 300px;
+    height: 150px;
+}
+
+.img_shopping {
+    width: 3rem;
+}
+
+.container_shopping {
+    position: relative;
+    width: 5rem;
+}
+
+.count_shopping {
+    position: absolute;
+    bottom: 0;
+    right: 1rem;
+    background-color: #DC0D0D;
+    color: white;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    font-size: 1rem;
+}
