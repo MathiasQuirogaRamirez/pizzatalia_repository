@@ -1,0 +1,20 @@
+.img_shopping {
+    width: 3rem;
+}
+
+.container_shopping {
+    position: relative;
+    width: 5rem;
+}
+
+.count_shopping {
+    position: absolute;
+    top: 1rem;
+    right: 0.1rem;
+    background-color: #DC0D0D;
+    color: white;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    font-size: 1rem;
+}

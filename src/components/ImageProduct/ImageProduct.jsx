@@ -1,7 +1,7 @@
 function ImageProduct (props) {
 
     return (
-        <img src={props.url} width="300px" height="300px"/>
+        <img src={props.url} width={props.size} height={props.size}/>
     );
 }
 

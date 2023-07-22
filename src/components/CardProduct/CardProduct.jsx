@@ -1,5 +1,6 @@
 import ImageProduct from "../ImageProduct/ImageProduct";
 import Button from "../Button/Button";
+import { Link } from "react-router-dom";
 import "./style.css";
 
 //#DC0D0D red
@@ -7,18 +8,22 @@ import "./style.css";
 
 function CardProduct (props) {
 
-    const {title, description} = props;
+    const {id, name, description, price, detail, url} = props;
 
-    return (
-        <div className="container_product">
-            <h3>{title}</h3>
-            <div className="container_img_text">
-                <ImageProduct url="/assets/carbonara.png"/>
-                <div class="centered">{description}</div>
-            </div>
-            <Button text="Desde 13€"></Button>
-        </div>
-    );
+    const html_product = <div className="container_product">
+                            <h3>{name}</h3>
+                            <ImageProduct url={url} size="300"/>
+                            <Link className="link" to={`/product/${id}`}><Button text={price}></Button></Link>
+                         </div>;
+
+    const html_product_detail = <div className="container_product">
+                                    <h3>{name}</h3>
+                                    <ImageProduct url={url} size="400"/>
+                                    <h4 className="container_text">{`${price} €`}</h4>
+                                    <h4>{description}</h4>
+                                </div>;
+
+    return (detail === "true") ? html_product_detail : html_product;
 }
 
 export default CardProduct;

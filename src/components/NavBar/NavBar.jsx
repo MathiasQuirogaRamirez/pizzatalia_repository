@@ -1,15 +1,17 @@
+import { Link } from "react-router-dom";
+import ShoppingCart from "../ShoppingCart/ShoppingCart";
 import "./style.css"
 
-function NavBar (props) {
+function NavBar () {
 
     return (
         <div className="container_navbar">
-            <img className="img_logo" src="/assets/logo.png"></img>
+            <Link to="/"><img className="img_logo" src="/assets/logo.png"></img></Link>
             <ul className="ul_navbar">
-                <li className="li_navbar container_shopping"><img className="img_shopping" src="/assets/shopping_cart64.png"></img><h3 className="count_shopping">1</h3></li>
-                <li className="li_navbar"><a>Postres</a></li>
-                <li className="li_navbar"><a>Entrantes</a></li>
-                <li className="li_navbar"><a>Pizzas</a></li>
+                <li className="li_navbar"><ShoppingCart></ShoppingCart></li>
+                <li className="li_navbar"><Link className="link" to="/category/desserts">Desserts</Link></li>
+                <li className="li_navbar"><Link className="link" to="/category/starters">Starters</Link></li>
+                <li className="li_navbar"><Link className="link" to="/category/pizza">Pizzas</Link></li>
             </ul>
         </div>
     );
