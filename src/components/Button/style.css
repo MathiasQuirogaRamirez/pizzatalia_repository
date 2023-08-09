@@ -1,10 +1,10 @@
 .button {
-    width: 5rem;
+    width: auto;
     border-radius: 0.5rem;
     border: solid 2px #1DAD22;
     color: #DC0D0D;
     text-align: center;
     font-size: 1rem;
-    margin-top: 1rem;
+    margin: 1rem;
     padding: 0.5rem;
 }
